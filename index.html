@@ -109,6 +109,14 @@
             border-bottom: 4px solid var(--primary-color);
         }
 
+        /* Estilo para imagens internas do card (como as novas logos) */
+        .card-img {
+            height: 2.5rem;
+            width: auto;
+            margin-bottom: 1rem;
+            object-fit: contain;
+        }
+
         .card i {
             font-size: 2.5rem;
             color: var(--primary-color);
@@ -117,23 +125,6 @@
         }
 
         .card:hover i {
-            color: var(--hover-color);
-        }
-
-        /* Ícone do 7edu: Fino, sem negrito e em itálico */
-        .icon-7edu {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            color: var(--primary-color);
-            font-size: 3.2rem; 
-            font-weight: 300; /* Deixa a fonte fina */
-            font-style: italic; /* Aplica o itálico */
-            line-height: 1;
-            margin-bottom: 1rem;
-            transition: color 0.3s ease;
-            letter-spacing: -1px;
-        }
-
-        .card:hover .icon-7edu {
             color: var(--hover-color);
         }
 
@@ -204,8 +195,18 @@
         <div class="grid-ferramentas">
             
             <a href="https://7edu-br.educadventista.org/" target="_blank" class="card">
-                <div class="icon-7edu">7edu</div>
+                <img src="image_3.png" alt="Logo 7edu" class="card-img">
                 <h3>7edu</h3>
+            </a>
+
+            <a href="https://login-rh.sdasystems.org/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fresponse_type%3Did_token%2520token%26client_id%3Drhonlineangular%26state%3DSWRVZU9HUWtzU2ZlVWZRTzNFNVNTWXRtOXhMNFZQQ2FKQlNBfnFDUEdqc0dV;login%26redirect_uri%3Dhttps%253A%252F%252Frh-online.sdasystems.org%252Flogin%26scope%3Dopenid%2520profile%2520email%2520rhonline%253Aall%2520aps%253Aenrollment%26nonce%3DSWRVZU9HUWtzU2ZlVWZRTzNFNVNTWXRtOXhMNFZQQ2FKQlNBfnFDUEdqc0dV" target="_blank" class="card">
+                <img src="image_4.png" alt="Logo e-class school" class="card-img">
+                <h3>e-class</h3>
+            </a>
+
+            <a href="https://calendar.google.com" target="_blank" class="card">
+                <i class="fa-regular fa-calendar-days"></i>
+                <h3>Agenda</h3>
             </a>
 
             <a href="https://outlook.com" target="_blank" class="card">
@@ -219,17 +220,12 @@
                 <div class="subtext">acesse com a conta do eaportal.org</div>
             </a>
 
-            <a href="https://calendar.google.com" target="_blank" class="card">
-                <i class="fa-regular fa-calendar-days"></i>
-                <h3>Agenda</h3>
-            </a>
-
             <a href="https://sites.google.com/eaportal.org/cacli-rafaelpersio/in%C3%ADcio" target="_blank" class="card">
                 <i class="fa-solid fa-laptop"></i>
                 <h3>Agendamento de Chromebooks</h3>
             </a>
 
-            <a href="https://login-rh.sdasystems.org/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fresponse_type%3Did_token%2520token%26client_id%3Drhonlineangular%26state%3DSWRVZU9HUWtzU2ZlVWZRTzNFNVNTWXRtOXhMNFZQQ2FKQlNBfnFDUEdqc0dV;login%26redirect_uri%3Dhttps%253A%252F%252Frh-online.sdasystems.org%252Flogin%26scope%3Dopenid%2520profile%2520email%2520rhonline%253Aall%2520aps%253Aenrollment%26nonce%3DSWRVZU9HUWtzU2ZlVWZRTzNFNVNTWXRtOXhMNFZQQ2FKQlNBfnFDUEdqc0dV" target="_blank" class="card">
+            <a href="https://cacli.educacaoadventista.org.br/" target="_blank" class="card">
                 <i class="fa-solid fa-file-invoice-dollar"></i>
                 <h3>Holerite</h3>
             </a>
@@ -243,7 +239,7 @@
             </a>
             
             <a href="https://onedrive.com" target="_blank" class="card">
-                <i class="fa-brands fa-microsoft"></i>
+                <img src="image_5.png" alt="Ícone de nuvem corporativa" class="card-img">
                 <h3>OneDrive Adventistas</h3>
             </a>
 
